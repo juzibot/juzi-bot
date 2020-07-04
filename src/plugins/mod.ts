@@ -19,10 +19,10 @@ import { EventHotHandlerPlugin }    from './event-hot-handler'
 import { VorpalPlugin }             from './vorpal'
 
 import { FreshdeskPlugin }  from './freshdesk'
-import {
-  QnAMakerEnglishPlugin,
-  QnAMakerChinesePlugin,
-}                           from './qnamaker'
+// import {
+//   QnAMakerEnglishPlugin,
+//   QnAMakerChinesePlugin,
+// }                           from './qnamaker'
 
 const pluginList = [
   QRCodeTerminal(),
@@ -36,8 +36,8 @@ const pluginList = [
   VoteOutPlugin,
   VorpalPlugin,
   FreshdeskPlugin,
-  QnAMakerChinesePlugin,
-  QnAMakerEnglishPlugin,
+  // QnAMakerChinesePlugin,
+  // QnAMakerEnglishPlugin,
 ]
 
 export { pluginList }
