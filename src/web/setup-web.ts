@@ -49,16 +49,14 @@ export async function setupWeb (bot: Wechaty): Promise<void> {
 
     if (qrcodeValue) {
 
+      const qrImageUrl = 'https://wechaty.github.io/qrcode/' + encodeURIComponent(qrcodeValue)
+
       html = [
         `<h1>Juzi.BOT v${VERSION}</h1>`,
         'Scan QR Code: <br />',
         qrcodeValue + '<br />',
-        '<a href="http://goqr.me/" target="_blank">http://goqr.me/</a><br />',
+        `<a href="${qrImageUrl}" target="_blank">${qrImageUrl}</a><br />`,
         '\n\n',
-        '<image src="',
-        'https://wechaty.github.io/qrcode/',
-        encodeURIComponent(qrcodeValue),
-        '">',
       ].join('')
 
     } else if (userName) {
