@@ -27,12 +27,12 @@ const tokenConfig: RoomInviterConfig = {
   repeat,
   room: TOKEN_ROOM_ID,
   rule: [
-    'Thanks for asking me to invite you for joining the "Wechaty Developers\' Home" WeChat Room!',
+    'Thanks for asking me to invite you for joining the "Wechaty Puppet Service Provider" WeChat Room!',
     'Wechaty is a Conversational RPA for WeChat for connecting Chatbots in ease.',
     'You can find our documentation at https://wechaty.js.org',
     'Please introduce yourself after you join the room, cheers!',
   ],
-  welcome: 'is joining us as a new Wechaty developer! Welcome, and please introduce yourself to the community!',
+  welcome: 'is joining us as a new Wechaty Puppet Service Consumer, welcome!',
 }
 
 const TokenRoomInviterPlugin = RoomInviter(tokenConfig)
