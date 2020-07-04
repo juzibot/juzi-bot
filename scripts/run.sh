@@ -2,10 +2,10 @@
 
 set -e
 
-PORT=38788
+export PORT=38788
 LOG_FILE=juzibot.log
 
-while [ true ]
+while true
   do git checkout .
   git pull
   rm -f package-lock.json
