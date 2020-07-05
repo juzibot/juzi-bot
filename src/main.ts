@@ -2,7 +2,10 @@ import './config'
 
 import { log } from 'wechaty'
 
-import { getWechaty } from './wechaty/mod'
+import {
+  getWechaty,
+  getIoClient,
+}                     from './wechaty/mod'
 import { setupWeb }   from './web/mod'
 
 async function main () {
@@ -10,15 +13,20 @@ async function main () {
 
   const name = process.env.WECHATY_NAME || 'Juzi.BOT'
 
-  const bot = getWechaty(name)
+  const wechaty = getWechaty(name)
+  const client = getIoClient(wechaty)
 
-  await bot.start()
-  await setupWeb(bot)
+  /**
+   * IoClient for providing a Hostie Service for 句子秒回
+   */
+  await client.start()
+
+  await setupWeb(wechaty)
 
   /**
    * Do not return until the bot turned off
    */
-  await bot.state.ready('off')
+  await wechaty.state.ready('off')
 
   return 0
 }
