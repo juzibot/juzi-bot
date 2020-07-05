@@ -2,7 +2,6 @@
 
 set -e
 
-export PORT=38788
 LOG_FILE=juzibot.log
 
 while true
