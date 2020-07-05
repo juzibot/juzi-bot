@@ -15,7 +15,7 @@ Init.
 
 ## Author
 
-- [Rui](https://github.com/lijiarui) [(李佳芮)](https://lijiarui.github.io) Co-author of [Wechaty](https://github.com/wechaty/wechaty), Founder & CEO of [JuziBot](https://www.juzi.bot/)
+- [Rui](https://github.com/lijiarui) [(李佳芮)](https://lijiarui.github.io) Founder & CEO of [JuziBot](https://www.juzi.bot/), Co-author of [Wechaty](https://github.com/wechaty/wechaty).
 
 ## Copyright & License
 
