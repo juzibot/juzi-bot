@@ -21,6 +21,7 @@ function getIoClient (wechaty: Wechaty) {
   }
 
   const options: IoClientOptions = {
+    port,
     token,
     wechaty,
   }
