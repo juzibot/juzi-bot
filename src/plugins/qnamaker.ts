@@ -25,7 +25,7 @@ const config: WechatyQnAMakerConfig = {
   skipMessage,
   room,
   at: false,
-  contact: true,
+  contact: false,
   minScore,
 
   endpointKey     : process.env.WECHATY_PLUGIN_QNAMAKER_ENDPOINT_KEY,
