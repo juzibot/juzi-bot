@@ -11,10 +11,9 @@ import {
   CHATOPS_ROOM_ID,
 }                   from '../database'
 
-const BOT_NAME = 'Friday.BOT'
+const BOT_NAME = 'Juzi.BOT'
 
 const LOGIN_ANNOUNCEMENT  = `Der! I just got online!\n${BOT_NAME} v${VERSION}`
-// const LOGOUT_ANNOUNCEMENT = `Der! I'm going to offline now, see you, bye!\Juzi.BOT v${VERSION}`
 const EXIT_ANNOUNCEMENT   = `Der! I'm going to exit now, see you, bye!\n${BOT_NAME} v${VERSION}`
 
 let bot: undefined | Wechaty
