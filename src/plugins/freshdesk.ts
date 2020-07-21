@@ -15,7 +15,7 @@ const config: WechatyFreshdeskConfig = {
       'Thank you very much, and have a nice day!',
     ].join(' '),
   ],
-  contact: false,
+  contact: true,
   room: [
     TOKEN_ROOM_ID,
     /^Wechaty Testing$/,

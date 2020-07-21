@@ -24,7 +24,7 @@ const config: WechatyQnAMakerConfig = {
 
   skipMessage,
   room,
-  at: false,
+  mention: false,
   contact: true,
   minScore,
 
