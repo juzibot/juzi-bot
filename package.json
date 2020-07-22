@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/juzibot/juzi-bot#readme",
   "dependencies": {
-    "@chatie/tsconfig": "^0.10.1",
+    "@chatie/tsconfig": "^0.11.4",
     "@types/node-cron": "^2.0.3",
     "@types/raven": "^2.5.3",
     "@types/read-pkg-up": "^6.0.0",
@@ -46,7 +46,7 @@
     "vorpal-hacker-news": "^1.0.6",
     "wechaty": "^0.43.5",
     "wechaty-plugin-contrib": "^0.14.3",
-    "wechaty-plugin-freshdesk": "^0.4.11",
+    "wechaty-plugin-freshdesk": "^0.6.1",
     "wechaty-plugin-intercom": "^0.4.2",
     "wechaty-plugin-qnamaker": "^0.4.2",
     "wechaty-vorpal": "0.6.6",

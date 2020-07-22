@@ -13,6 +13,7 @@ const extensionList = [
 ]
 
 const config: WechatyVorpalConfig = {
+  contact: false,
   room : CHATOPS_ROOM_ID,
   use  : extensionList,
 }
