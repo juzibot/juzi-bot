@@ -46,7 +46,7 @@
     "vorpal-hacker-news": "^1.0.6",
     "wechaty": "^0.43.5",
     "wechaty-plugin-contrib": "^0.14.3",
-    "wechaty-plugin-freshdesk": "^0.6.1",
+    "wechaty-plugin-freshdesk": "^0.6.2",
     "wechaty-plugin-intercom": "^0.4.2",
     "wechaty-plugin-qnamaker": "^0.4.2",
     "wechaty-vorpal": "0.6.6",
