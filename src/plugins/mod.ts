@@ -18,7 +18,7 @@ import { HeartbeatPlugin }          from './heartbeat'
 import { EventHotHandlerPlugin }    from './event-hot-handler'
 import { VorpalPlugin }             from './vorpal'
 
-import { FreshdeskPlugin }  from './freshdesk'
+// import { FreshdeskPlugin }  from './freshdesk'
 import { QnAMakerPlugin }   from './qnamaker'
 
 const pluginList = [
@@ -32,7 +32,7 @@ const pluginList = [
   EventHotHandlerPlugin,
   VoteOutPlugin,
   VorpalPlugin,
-  FreshdeskPlugin,
+  // FreshdeskPlugin,
   QnAMakerPlugin,
 ]
 
