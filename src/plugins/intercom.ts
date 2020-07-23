@@ -2,7 +2,7 @@
 import {
   WechatyIntercom,
   WechatyIntercomConfig,
-}                           from 'wechaty-plugin-intercom'
+}                           from 'wechaty-intercom'
 
 import { TOKEN_ROOM_ID } from '../database'
 

@@ -2,7 +2,7 @@
 import {
   WechatyFreshdesk,
   WechatyFreshdeskConfig,
-}                           from 'wechaty-plugin-freshdesk'
+}                           from 'wechaty-freshdesk'
 
 import { TOKEN_ROOM_ID } from '../database'
 

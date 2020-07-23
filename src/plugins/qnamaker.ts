@@ -2,7 +2,7 @@
 import {
   WechatyQnAMaker,
   WechatyQnAMakerConfig,
-}                           from 'wechaty-plugin-qnamaker'
+}                           from 'wechaty-qnamaker'
 
 import {
   TOKEN_ROOM_ID,
