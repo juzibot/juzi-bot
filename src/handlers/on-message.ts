@@ -1,10 +1,10 @@
-import { CHATOPS_ALARM_ROOM_ID } from './../config'
 import {
   log,
   Message,
   Wechaty,
 }             from 'wechaty'
-import { DONUT_MONITOR_OA_ID } from '../config'
+
+import { CHATOPS_ALARM_ROOM_ID, DONUT_MONITOR_OA_ID } from '../config'
 
 // import moment from 'moment'
 
