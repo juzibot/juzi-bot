@@ -1,8 +1,10 @@
+import { CHATOPS_ALARM_ROOM_ID } from './../config'
 import {
   log,
   Message,
   Wechaty,
 }             from 'wechaty'
+import { DONUT_MONITOR_OA_ID } from '../config'
 
 // import moment from 'moment'
 
@@ -29,6 +31,11 @@ export default async function onMessage (
     if (type === Message.Type.Text) {
       if (text.match(/^#ding$/i)) {
         await message.say('dong')
+      }
+
+      if (message.from() && message.from().id === DONUT_MONITOR_OA_ID) {
+        const alarmRoom = this.Room.load(CHATOPS_ALARM_ROOM_ID)
+        await message.forward(alarmRoom)
       }
     }
 
