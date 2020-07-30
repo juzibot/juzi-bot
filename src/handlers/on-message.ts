@@ -4,7 +4,10 @@ import {
   Wechaty,
 }             from 'wechaty'
 
-import { CHATOPS_ALARM_ROOM_ID, DONUT_MONITOR_OA_ID } from '../config'
+import {
+  CHATOPS_ALARM_ROOM_ID,
+  DONUT_MONITOR_OA_ID,
+}             from '../config'
 
 // import moment from 'moment'
 
@@ -22,7 +25,6 @@ export default async function onMessage (
 
   const type = message.type()
   const text = message.text()
-
   try {
     if (message.self()) {
       return
@@ -33,7 +35,8 @@ export default async function onMessage (
         await message.say('dong')
       }
 
-      if (message.from() && message.from().id === DONUT_MONITOR_OA_ID) {
+      const contact = message.from()
+      if (contact && contact.id === DONUT_MONITOR_OA_ID) {
         const alarmRoom = this.Room.load(CHATOPS_ALARM_ROOM_ID)
         await message.forward(alarmRoom)
       }
