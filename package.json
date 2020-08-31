@@ -1,6 +1,6 @@
 {
   "name": "juzi-bot",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "Juzi Assistant BOT",
   "main": "index.js",
   "engines": {
