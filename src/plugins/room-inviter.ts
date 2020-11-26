@@ -9,7 +9,6 @@ import {
 }                       from 'wechaty-plugin-contrib'
 import { getPuppetServiceProviderTokenList } from '../database'
 
-
 const repeat: talkers.ContactTalkerOptions = async (contact: Contact, room?: Room) => {
   await contact.say('You are already in our room: ' + await room?.topic())
 }
