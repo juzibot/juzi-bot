@@ -7,10 +7,8 @@ import {
   RoomInviterConfig,
   talkers,
 }                       from 'wechaty-plugin-contrib'
+import { getPuppetServiceProviderTokenList } from '../database'
 
-import {
-  TOKEN_ROOM_ID,
-}                           from '../database'
 
 const repeat: talkers.ContactTalkerOptions = async (contact: Contact, room?: Room) => {
   await contact.say('You are already in our room: ' + await room?.topic())
@@ -25,7 +23,7 @@ const tokenConfig: RoomInviterConfig = {
     /^donut$/i,
   ],
   repeat,
-  room: TOKEN_ROOM_ID,
+  room: getPuppetServiceProviderTokenList(),
   rule: [
     'Thanks for asking me to invite you for joining the "Wechaty Puppet Service Provider" WeChat Room!',
     'Wechaty is a Conversational RPA for WeChat for connecting Chatbots in ease.',
