@@ -3,14 +3,14 @@ import {
   WechatyQnAMaker,
   WechatyQnAMakerConfig,
 }                           from 'wechaty-qnamaker'
-import { getPuppetServiceProviderTokenList } from '../database'
+import { PROVIDER_ROOM_LIST } from '../database'
 
 const skipMessage = [
   /^wechaty$/i,
   /^token$/i,
 ]
 
-const room = getPuppetServiceProviderTokenList()
+const room = PROVIDER_ROOM_LIST
 
 const minScore = 30
 

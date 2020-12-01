@@ -3,7 +3,7 @@ import {
   WechatyIntercom,
   WechatyIntercomConfig,
 }                           from 'wechaty-intercom'
-import { getPuppetServiceProviderTokenList } from '../database'
+import { PROVIDER_ROOM_LIST } from '../database'
 
 const config: WechatyIntercomConfig = {
   mention: true,
@@ -15,7 +15,7 @@ const config: WechatyIntercomConfig = {
       'Thank you very much, and have a nice day!',
     ].join(' '),
   ],
-  room: getPuppetServiceProviderTokenList(),
+  room: PROVIDER_ROOM_LIST,
 
   intercomToken   : process.env.WECHATY_PLUGIN_INTERCOM_TOKEN,
   webhookProxyUrl : process.env.WECHATY_PLUGIN_INTERCOM_WEBHOOK_PROXY_URL,

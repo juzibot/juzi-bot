@@ -9,9 +9,7 @@ export {
   HEARTBEAT_ROOM_ID,
 }
 
-export function getPuppetServiceProviderTokenList () {
-  return [
-    TOKEN_ROOM_1_ID,
-    TOKEN_ROOM_2_ID,
-  ]
-}
+export const PROVIDER_ROOM_LIST = [
+  TOKEN_ROOM_1_ID,
+  TOKEN_ROOM_2_ID,
+]

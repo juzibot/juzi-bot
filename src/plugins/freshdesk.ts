@@ -3,7 +3,7 @@ import {
   WechatyFreshdesk,
   WechatyFreshdeskConfig,
 }                           from 'wechaty-freshdesk'
-import { getPuppetServiceProviderTokenList } from '../database'
+import { PROVIDER_ROOM_LIST } from '../database'
 
 const config: WechatyFreshdeskConfig = {
   close: [
@@ -16,7 +16,7 @@ const config: WechatyFreshdeskConfig = {
   ],
   contact: true,
   room: [
-    ...getPuppetServiceProviderTokenList(),
+    ...PROVIDER_ROOM_LIST,
     /^Wechaty Testing$/,
   ],
 
