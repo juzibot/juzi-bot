@@ -1,6 +1,6 @@
 {
   "name": "juzi-bot",
-  "version": "0.2.14",
+  "version": "0.2.15",
   "description": "Juzi Assistant BOT",
   "main": "index.js",
   "engines": {
@@ -44,7 +44,7 @@
     "node-cron": "^2.0.3",
     "read-pkg-up": "^7.0.1",
     "vorpal-hacker-news": "^1.0.6",
-    "wechaty": "^0.48.10",
+    "wechaty": "^0.50.7",
     "wechaty-plugin-contrib": "^0.14.8",
     "wechaty-freshdesk": "^0.6.6",
     "wechaty-intercom": "^0.4.4",
